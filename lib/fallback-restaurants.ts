@@ -1,0 +1,88 @@
+import type { RestaurantCandidate } from "./domain";
+
+/**
+ * Local-only Seoul/Gyeonggi demo data used when an external search is unavailable.
+ * These are illustrative fallback candidates, not verified live Kakao results.
+ */
+export const FALLBACK_DATASET_LABEL = "서울·경기 폴백 데모 데이터 (실시간 카카오 검증 결과 아님)";
+
+export const FALLBACK_RESTAURANTS: readonly RestaurantCandidate[] = [
+  {
+    id: "fallback-seoul-eulji-hansang",
+    name: "을지 한상",
+    category: "한식",
+    distanceMeters: null,
+    atmospheres: ["편안한 모임", "회식"],
+    occasions: ["회식", "팀 점심"],
+    foodPreferences: ["고기"],
+    menus: ["한식"],
+    alcoholTypes: ["소주", "맥주", "전통주"],
+    source: "fallback",
+    region: "Seoul",
+  },
+  {
+    id: "fallback-seoul-seongsu-grill",
+    name: "성수 숯불구이",
+    category: "고기",
+    distanceMeters: null,
+    atmospheres: ["활기찬 회식", "편안한 모임"],
+    occasions: ["회식", "친구 모임"],
+    foodPreferences: ["고기", "매운맛"],
+    menus: ["고기", "한식"],
+    alcoholTypes: ["소주", "맥주"],
+    source: "fallback",
+    region: "Seoul",
+  },
+  {
+    id: "fallback-seoul-yeouido-sushi",
+    name: "여의도 스시마루",
+    category: "일식",
+    distanceMeters: null,
+    atmospheres: ["조용한 대화", "격식 있는 식사"],
+    occasions: ["거래처", "팀 점심"],
+    foodPreferences: ["해산물"],
+    menus: ["일식", "해산물"],
+    alcoholTypes: ["맥주", "와인", "전통주"],
+    source: "fallback",
+    region: "Seoul",
+  },
+  {
+    id: "fallback-seoul-hongdae-noodle",
+    name: "홍대 면향",
+    category: "중식",
+    distanceMeters: null,
+    atmospheres: ["활기찬 회식"],
+    occasions: ["친구 모임", "회식"],
+    foodPreferences: ["매운맛", "가벼운 식사"],
+    menus: ["중식"],
+    alcoholTypes: ["맥주", "고량주"],
+    source: "fallback",
+    region: "Seoul",
+  },
+  {
+    id: "fallback-gyeonggi-pangyo-pasta",
+    name: "판교 테이블",
+    category: "양식",
+    distanceMeters: null,
+    atmospheres: ["격식 있는 식사", "조용한 대화"],
+    occasions: ["거래처", "팀 점심"],
+    foodPreferences: ["채식 배려", "가벼운 식사"],
+    menus: ["양식"],
+    alcoholTypes: ["와인", "맥주"],
+    source: "fallback",
+    region: "Gyeonggi",
+  },
+  {
+    id: "fallback-gyeonggi-suwon-seafood",
+    name: "수원 바다상",
+    category: "해산물",
+    distanceMeters: null,
+    atmospheres: ["편안한 모임", "활기찬 회식"],
+    occasions: ["회식", "가족 모임"],
+    foodPreferences: ["해산물"],
+    menus: ["해산물", "한식"],
+    alcoholTypes: ["소주", "맥주", "전통주"],
+    source: "fallback",
+    region: "Gyeonggi",
+  },
+];
